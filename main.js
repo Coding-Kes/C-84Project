@@ -21,19 +21,15 @@ function uploadimg() {
 
 window.addEventListener("keydown", my_keydown);
 
-function my_keydown(e)
 
-	keyPressed = e.keyCode;
-	console.log(keyPressed);
-	{
-		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
-		function my_keydown(e) { keyPressed = e.keyCode;
+
+		function my_keydown(e)
+		
+		{ keyPressed = e.keyCode;
 			 console.log(keyPressed);
-			 if((keyPressed >=97 && keyPressed<=122)||
-
-			  (keyPressed >=65 && keyPressed<=90)) { alphabetkey();
-			  }
-				
+			 if((keyPressed >=97 && keyPressed<=122)||(keyPressed >=65 && keyPressed<=90))
+			  { 
+				alphabetkey();
 			 document.getElementById("d1").innerHTML="You pressed Alphabet Key"; console.log("alphabet key"); }
 			 else if(keyPressed >=48 && keyPressed<=57) { numberkey(); document.getElementById("d1").innerHTML="You pressed Number Key";
 			  console.log("Number key"); }
